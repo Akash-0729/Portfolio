@@ -1,0 +1,1176 @@
+/* ---------------------------------------- CSS Start ---------------------------------------- */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* ---------------------------------------- Body ---------------------------------------- */
+body{
+    margin: 0px;
+}
+/* ---------------------------------------- Overall Web Page Div ---------------------------------------- */
+.bg{
+    min-height: 650px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    box-sizing: border-box;
+    padding-top: 1px;
+    overflow-x: hidden;
+}
+/* ---------------------------------------- Nav Bar ---------------------------------------- */
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin-top: -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(49, 49, 49);
+    padding: 0px 50px;
+}
+/* ---------------------------------------- Portfolio Name ---------------------------------------- */
+.por{
+    color: white;
+    animation-name: port;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.por:hover{
+    cursor: pointer;
+    color: skyblue;
+    text-shadow: 0px 0px 10px skyblue;
+}
+/* ---------------------------------------- Anchor Tags ---------------------------------------- */
+.fr{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 0px;
+    font-size: 20px;
+    animation-name: hom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:first-child{
+    color: skyblue;
+    text-shadow: 0px 0px 10px skyblue;
+}
+a:hover{
+    color: skyblue;
+    text-shadow: 0px 0px 10px skyblue;
+}
+/* ---------------------------------------- Check Box ---------------------------------------- */
+.che{
+    display: none;
+}
+label{
+    display: none;
+}
+/* ---------------------------------------- Menu Bar Icon Tag ---------------------------------------- */
+input:checked ~ .fr{
+    background-color: rgb(49, 49, 49, 0.5);
+    transition-duration: 1s;
+    top: 75px;
+}
+/* ---------------------------------------- Home Page ---------------------------------------- */
+.home{
+    /* height: 650px; */
+    padding-top: 75px;
+    /* margin-top: 74px; */
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+    padding: 150px 50px;
+}
+/* ---------------------------------------- Home Page Text Div ---------------------------------------- */
+.text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    animation-name: txt;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.text > h1:nth-child(1){
+    font-size: 30px;
+}
+.text > h1:nth-child(2){
+    font-size: 50px;
+}
+.text > h1:nth-child(2):hover{
+    color: skyblue;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px skyblue;
+}
+.text > h1:nth-child(3){
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.text > p{
+    font-size: 20px;
+}
+.spa{
+    color: skyblue;
+    animation-name: spn;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+/* ---------------------------------------- Home Page Image Div ---------------------------------------- */
+.image{
+    display: flex;
+    align-items: center;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.image > img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 15px double skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+    transition-duration: 1s;
+} 
+.image > img:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 20px skyblue;
+}
+/* ---------------------------------------- Home Page Icons ---------------------------------------- */
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.icon .fa-brands{
+    gap: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    color: skyblue;
+    font-size: 25px;
+    padding: 11px;
+    box-shadow: 0px 0px 10px skyblue;
+    transition-duration: 0.5s;
+}
+.icon .fa-brands:nth-child(1){
+    padding-left: 15px;
+}
+.icon .fa-brands:nth-child(2){
+    padding-top: 12px;
+}
+.icon .fa-brands:nth-child(3){
+    padding-left: 12px;
+}
+.icon .fa-brands:nth-child(4){
+    padding-left: 13px;
+    padding-top: 12px;
+}
+.icon .fa-brands:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 15px skyblue;
+    background-color: skyblue;
+    color: rgb(49, 49, 49);
+}
+/* ---------------------------------------- Home Page Button Tag ---------------------------------------- */
+.bt1{
+    margin-top: 15px;
+    height: 40px;
+    width: 140px;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    border-radius: 25px;
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    box-shadow: 0px 0px 10px skyblue;
+    transition-duration: 0.5s;
+}
+.bt1:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 15px skyblue;
+}
+/* ---------------------------------------- About Page ---------------------------------------- */
+.about{
+    /* min-height: 575px; */
+    min-height: 650px;
+    padding-top: 75px;
+    width: 100%;
+    /* margin-top: 75px; */
+    background-color: rgb(49, 49, 49);
+    /* overflow-x: hidden; */
+}
+.about > h1:nth-child(1){
+    text-align: center;
+    color: white;
+    transition-duration: 1s;
+    animation-name: abme;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.spa2{
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+    transition-duration: 0.5s;
+}
+.about > h1:nth-child(1):hover{
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+    cursor: pointer;
+}
+.about > h1:nth-child(1):hover .spa2{
+    color: white;
+    text-shadow: 0px 0px 0px;
+}
+.abab{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.lane{
+    height: 515px;
+    width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 80%;
+    width: 5px;
+    background-color: skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+    transition-duration: 1s;
+    animation-name: line1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.line:hover{
+    height: 100%;
+    cursor: pointer;
+}
+.abtxt{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-name: abtext;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.abtxt > h2{
+    color: white;
+    margin-bottom: 40px;
+    color: skyblue;
+    font-size: 40px;
+    text-shadow: 0px 0px 5px skyblue;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+.abtxt > h2:hover{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+    cursor: pointer;
+}
+.abtxt > p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.btta2{
+    height: 40px;
+    width: 120px;
+    background-color: skyblue;
+    border: 2px solid skyblue;
+    border-radius: 25px;
+    color: rgb(49, 49, 49);
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px skyblue;
+    transition-duration: 0.5s;
+}
+.btta2:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 15px skyblue;
+}
+.abcon{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-name: abcont;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.abcon > h2{
+    color: white;
+    margin-bottom: 40px;
+    color: skyblue;
+    font-size: 40px;
+    text-shadow: 0px 0px 5px skyblue;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+.abcon > h2:hover{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+    cursor: pointer;
+}
+table{
+    background-color: rgb(49, 49, 49);
+    width: 100%;
+}
+td > h3{
+    text-align: start;
+    color: white;
+    margin-bottom: 20px;
+}
+td > .cnt{
+    color: skyblue;
+    font-size: 30px;
+}
+td:first-child{
+    text-align: center;
+    padding-right: 20px;
+}
+.cnt{
+    text-shadow: 0px 0px 5px skyblue;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+}
+.cnt:hover{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+}
+.icons6{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+}
+.icons6 > .fa-brands{
+    font-size: 35px;
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+    transition-duration: 0.5s;
+}
+.icons6 > .fa-brands:hover{
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+}
+/* ---------------------------------------- Education Page ---------------------------------------- */
+.education{
+    min-height: 650px;
+    /* height: 575px; */
+    width: 100%;
+    padding-top: 75px;
+    background-color: rgb(49, 49, 49);
+}
+.education > h1:nth-child(1){
+    text-align: center;
+    color: white;
+    transition-duration: 1s;
+    animation-name: abed;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.education > h1:nth-child(1):hover{
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+    cursor: pointer;
+}
+.education > h1:nth-child(1):hover .spa2{
+    color: white;
+    text-shadow: 0px 0px 0px;
+}
+.edubox{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    animation-name: abtext;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.boxed{
+    min-height: 144px;
+    width: 88%;
+    background-color: transparent;
+    border-radius: 10px 25px 10px 25px;
+    border: 2px solid skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+    padding: 8px 20px 8px 20px;
+    color: white;
+    transition-duration: 1s;
+}
+.colna{
+    color: skyblue;
+    margin-bottom: 2px;
+    text-shadow: 0px 0px 5px skyblue;
+}
+.boxed > p{
+    margin: 0px;
+    font-size: 18px;
+}
+.spa3{
+    color: skyblue;
+}
+.boxed:hover{
+    transform: scale(1.1, 1.1);
+}
+.educon{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-name: abcont;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.persk{
+    height: 100%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background-color: transparent;
+    border: 2px solid skyblue;
+    border-radius: 25px 10px 25px 10px;
+    box-shadow: 0px 0px 10px skyblue;
+    padding: 20px;
+}
+.spbt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.bor{
+    height: 30px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding: 3px;
+}
+.skyper{
+    height: 100%;
+    width: 90%;
+    background-color: skyblue;
+    border-radius: 3px;
+    transition-duration: 1s;
+    animation: sky1;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+}
+.skyper2{
+    width: 80%;
+    animation: sky2;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+}
+.skyper3{
+    width: 78%;
+    animation: sky3;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+}
+.skyper4{
+    width: 82%;
+    animation: sky4;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+}
+.skyper5{
+    width: 88%;
+    animation: sky5;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+}
+.persk:hover .skyper{
+    width: 100%;
+}
+/* ---------------------------------------- Skills & Project Page ---------------------------------------- */
+.skills{
+    min-height: 650px;
+    width: 100%;
+    padding-top: 75px;
+    background-color: rgb(49, 49, 49);
+}
+.skills > h1:nth-child(1){
+    text-align: center;
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+    transition-duration: 1s;
+    animation-name: abme;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.skills > h1:nth-child(1):hover{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+    cursor: pointer;
+}
+.servsk{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 30px;
+    padding: 10px;
+    animation-name: serskill;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.skbox{
+    height: 220px;
+    width: 330px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px skyblue;
+    border: 2px solid skyblue;
+    transition-duration: 1s;
+}
+.skbox > .fa-brands,.fa-solid{
+    color: skyblue;
+    font-size: 30px;
+}
+.skbox > h3{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.skbox > p{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.butsk{
+    height: 30px;
+    width: 100px;
+    background-color: skyblue;
+    border: 2px solid skyblue;
+    border-radius: 25px;
+    color: rgb(49, 49, 49);
+    box-shadow: 0px 0px 10px skyblue;
+    transition-duration: 0.5s;
+}
+.butsk:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 15px skyblue;
+}
+.skbox:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 15px skyblue;
+}
+.serproj{
+    animation-name: proj;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+} 
+/* ---------------------------------------- Contact Page ---------------------------------------- */
+.contact{
+    min-height: 650px;
+    width: 100%;
+    padding-top: 75px;
+    background-color: rgb(49, 49, 49);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.contact > h1:nth-child(1){
+    text-align: center;
+    color: white;
+    transition-duration: 1s;
+    animation-name: abme;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.spa2{
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+}
+.contact > h1:nth-child(1):hover{
+    color: skyblue;
+    text-shadow: 0px 0px 5px skyblue;
+    cursor: pointer;
+}
+.contact > h1:nth-child(1):hover .spa2{
+    color: white;
+    text-shadow: 0px 0px 0px;
+}
+.contfor{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: lastfr;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: 560px;
+    gap: 20px;
+    margin-top: 40px;
+}
+.flname{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.flname > input{
+    height: 45px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    outline: none;
+    color: skyblue;
+    padding-left: 15px;
+    font-size: 18px;
+    border: 2px solid skyblue;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 10px skyblue;
+}
+input::placeholder{
+    color: darkgray;
+    font-size: 18px;
+}
+.txtar::placeholder{
+    color: darkgray;
+    font-size: 18px;
+}
+.txtar{
+    height: 220px;
+    width: 100%;
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    color: skyblue;
+    padding-left: 15px;
+    font-size: 18px;
+    transition-duration: 1s;
+    border: 2px solid skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+    resize: none;
+}
+.btaa{
+    display: flex;
+    justify-content: center;
+}
+.btla{
+    height: 40px;
+    width: 150px;
+}
+input:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0p 15px skyblue;
+    cursor: pointer;
+}
+.txtar:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0p 15px skyblue;
+    cursor: pointer;
+}
+/* ---------------------------------------- Boot strap ---------------------------------------- */
+.bcolg{
+    background-color: rgb(49, 49, 49)!important;
+}
+.bsinp{
+    outline: none!important;
+}
+.bsinp::placeholder{
+    color: black;
+}
+.bgcol{
+    background-color: skyblue!important;
+    color: black!important;
+}
+.anime1{
+    animation-name: serskill;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.anime2{
+    animation-name: proj;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+/* ---------------------------------------- Animations ---------------------------------------- */
+@keyframes port{
+    from{
+        position: relative;
+        left: -250px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes hom{
+    from{
+        position: relative;
+        right: -600px;
+    }
+    to{
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes txt{
+    from{
+        position: relative;
+        left: -700px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes img{
+    from{
+        position: relative;
+        right: -600px;
+    }
+    to{
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes spn{
+    0%{
+        background-color: rgb(49, 49, 49);
+        text-shadow: 0px 0px 10px skyblue;
+        padding: 0px 4px 0px 2px;
+    }
+    50%{
+        background-color: skyblue;
+        color:rgb(49, 49, 49);
+        border-radius: 10px;
+        padding: 0px 4px 0px 2px;
+        box-shadow: 0px 0px 15px skyblue;
+    }
+    100%{
+        background-color: rgb(49, 49, 49);
+        padding: 0px 4px 0px 2px;
+        text-shadow: 0px 0px 10px skyblue;
+    }
+}
+@keyframes line1{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 80%;
+    }
+}
+@keyframes abtext{
+    from{
+        position: relative;
+        left: -700px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes abcont{
+    from{
+        position: relative;
+        right: -700px;
+    }
+    to{
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes abme{
+    from{
+        position: relative;
+        top: -75px;
+    }
+    to{
+        position: relative;
+        top: 0px;
+    }
+}
+@keyframes abed{
+    from{
+        position: relative;
+        left: -1000px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes sky1{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes sky2{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes sky3{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 78%;
+    }
+}
+@keyframes sky4{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 82%;
+    }
+}
+@keyframes sky5{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 88%;
+    }
+}
+@keyframes serskill{
+    from{
+        position: relative;
+        left: -100%;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes proj{
+    from{
+        position: relative;
+        right: -100%;
+    }
+    to{
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes lastfr{
+    from{
+        position: relative;
+        left: -100%;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+/* ---------------------------------------- Media Queries For Mobile Screen ---------------------------------------- */
+@media only screen and (max-width: 600px){ 
+    .fr{
+        position: absolute;
+        left: 0px;
+        top: -550%;
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    label{
+        display: block;
+    }
+    .fa-bars{
+        color: white;
+        font-size: 25px;
+        margin-top: -8px;
+        animation-name: icobar;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes icobar{
+        from{
+            position: relative;
+            right: -250px;
+        }
+        to{
+            position: relative;
+            right: 0px;
+        }
+    }
+    .home{
+        margin-top: 74px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .bt1{
+        margin-bottom: 20px;
+    }
+    .image > img{
+        height: 300px;
+        width: 300px;
+    }
+    .about{
+        width: 100%;
+    }
+    .about > h1:nth-child(1){
+        margin-top: 20px;
+    }
+    .abab{
+        min-height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .abtxt{
+        height: 50%;
+        width: 100%;
+    }
+    .abcon{
+        height: 30%;
+        width: 100%;
+    }
+    .lane{
+        height: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        height: 5px;
+        width: 80%;
+        background-color: skyblue;
+        box-shadow: 0px 0px 10px skyblue;
+        transition-duration: 1s;
+        animation-name: lane1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    .line:hover{
+        height: 5px;
+        width: 100%;
+        cursor: pointer;
+    }
+    @keyframes lane1{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 80%;
+        }
+    }
+    .edubox{
+        width: 100%;
+    }
+    .educon{
+        width: 100%;
+    }
+    .boxed{
+        min-height: 144px;
+    }
+    .skbox{
+        display: flex;
+        flex-grow: 1;
+    }
+    .servsk{
+        padding: 20px;
+    }
+    .flname{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form{
+        padding: 20px;
+    }
+}
+/* ---------------------------------------- Media Queries For Tablet Screen ---------------------------------------- */
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .fr{
+        position: absolute;
+        left: 0px;
+        top: -550%;
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    label{
+        display: block;
+    }
+    .fa-bars{
+        color: white;
+        font-size: 25px;
+        margin-top: -8px;
+        animation-name: icobar;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes icobar{
+        from{
+            position: relative;
+            right: -250px;
+        }
+        to{
+            position: relative;
+            right: 0px;
+        }
+    }
+    .home{
+        margin-top: 74px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .bt1{
+        margin-bottom: 20px;
+    }
+    .about{
+        width: 100%;
+    }
+    .about > h1:nth-child(1){
+        margin-top: 20px;
+    }
+    .abab{
+        min-height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .abtxt{
+        height: 40%;
+        width: 100%;
+    }
+    .abcon{
+        height: 40%;
+        width: 100%;
+    }
+    .lane{
+        height: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        height: 5px;
+        width: 80%;
+        background-color: skyblue;
+        box-shadow: 0px 0px 10px skyblue;
+        transition-duration: 1s;
+        animation-name: lane1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    .line:hover{
+        height: 5px;
+        width: 100%;
+        cursor: pointer;
+    }
+    @keyframes lane1{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 80%;
+        }
+    }
+    .edubox{
+        width: 100%;
+    }
+    .educon{
+        width: 100%;
+    }
+    .skbox{
+        display: flex;
+        flex-grow: 1;
+    }
+    .servsk{
+        padding: 30px;
+    }
+}
