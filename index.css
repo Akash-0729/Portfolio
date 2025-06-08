@@ -195,10 +195,12 @@ input:checked ~ .fr{
     background-color: skyblue;
     border: 1px solid skyblue;
     border-radius: 25px;
-    color: rgb(49, 49, 49);
-    font-size: 18px;
     box-shadow: 0px 0px 10px skyblue;
     transition-duration: 0.5s;
+}
+.bt1 > a{
+    font-size: 18px;
+    color: rgb(49, 49, 49);
 }
 .bt1:hover{
     transform: scale(1.1, 1.1);
@@ -570,6 +572,10 @@ td:first-child{
     box-shadow: 0px 0px 10px skyblue;
     border: 2px solid skyblue;
     transition-duration: 1s;
+}
+.skbox > h1{
+    color: white;
+    margin-bottom: 20px;
 }
 .skbox > .fa-brands,.fa-solid{
     color: skyblue;
